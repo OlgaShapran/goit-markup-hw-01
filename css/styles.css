@@ -10,12 +10,14 @@
 --btn-txt-cl: #FFFFFF;
 --tel-txt-cl: #757575;
 --footer-txt-cl: rgba(255, 255, 255, 0.6);
+--studio-txt-cl: #000000;
 
 /* bg colors */
 --light-bg-cl: #E5E5E5;
 --dark-bg-cl: #2F303A;
 --portfolio-bg-cl: #EEEEEE;
 --team-bg-cl: #F5F4FA;
+--btn-bl-cl: #188CE8;
 }
 /* others */
 
@@ -26,6 +28,8 @@
 body {
     font-family: var(--main-font);
     color: var(--main-txt-cl);
+    font-size: 14px;
+    letter-spacing: 0.03em;
 }
 
 /* reset styles */
@@ -37,24 +41,33 @@ ul {
     list-style: none;
 }
 
-
-
 /* header section */
-.header-WebStudio,
+.header-WebStudio>span{
+    color: var(--accent-txt-cl);
+}
+.header-WebStudio{
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    letter-spacing: 0.03em;
+    color: var(--studio-txt-cl);
+}
+
 .footer-link{
     Font-family: var(--secondary-font);
     font-weight: 700;
     font-size: 26px;
-    line-height: calc (31 / 26);
+    line-height: calc(31 / 26);
     Letter-spacing: 0.03em;
-    color: var(--accent-txt-cl);
+    color: var(--main-txt-cl);
 }
 .header-link,
 .link-mail,
 .link-phone{
     font-weight: 500;
     Font-size: 14px;
-    Line-height: calc (16 / 14);
+    line-height: calc(16 / 14);
     letter-spacing: 0.02em;
 }
 .header-link{
@@ -88,7 +101,7 @@ ul {
 .hero-title {
     font-weight: 900;
     font-size: 44px;
-    Line-height: calc (60 / 44);
+    line-height: calc(60 / 44);
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white-txt-cl);
@@ -97,26 +110,39 @@ ul {
     font-family: inherit;
     font-weight: 700;
     Font-size: 16px;
-    Line-height: calc (30 / 16);
+    line-height: calc(30 / 16);
     display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--white-txt-cl);
-    background-color: transparent;
+    background-color: var(--accent-txt-cl);
     cursor: pointer;
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
     color: var(--btn-txt-cl);
-    background-color: var(--accent-txt-cl);
+    background-color: var(--btn-bl-cl);
 }
 /* section plus */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 .plus-subject{
     font-weight: 700;
     font-size: 14px;
-    line-height: calc (16 / 14);
+    line-height: calc(16 / 14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--main-txt-cl);
@@ -133,7 +159,7 @@ ul {
 .team-tittle{
     font-weight: 700;
     font-size: 36px;
-    line-height: calc (42 / 36);
+    line-height: calc(42 / 36);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-txt-cl);
@@ -153,7 +179,7 @@ ul {
 .team-spec{
     font-weight: 400;
     font-size: 16px;
-    line-height: calc (19 / 16);
+    line-height: calc(19 / 16);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--tel-txt-cl);
@@ -172,9 +198,9 @@ ul {
     font-family: inherit;
     font-weight: 500;
     Font-size: 16px;
-    Line-height: calc (26 / 16);
+    line-height: calc(26 / 16);
     text-align: center;
-    Letter-spacing: 0.03em;
+    letter-spacing: 0.03em;
     cursor: pointer;
     background-color: var(--team-bg-cl);
     color: var(--main-txt-cl);
@@ -187,14 +213,14 @@ ul {
 .project-subtitle{
     font-weight: 700;
     font-size: 18px;
-    line-height: (36 / 18);
+    line-height: calc(36 / 18);
     letter-spacing: 0.06em;
     color: var(--main-txt-cl);
 }
 .project-text{
     font-weight: 400;
     font-size: 16px;
-    line-height: calc (30/16);
+    line-height: calc(30 / 16);
     letter-spacing: 0.03em;
     color: var(--tel-txt-cl);
 }
@@ -203,17 +229,20 @@ ul {
 .footer{
     background-color: var(--dark-bg-cl);
 }
+.footer-link{
+    color: var(--accent-txt-cl);
+}
 .footer-adress{
     font-weight: 400;
     font-size: 14px;
-    line-height: calc (24 / 14);
+    line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     color: var(--white-txt-cl);
 }
 .footer-mail, .footer-tel{
     font-weight: 400;
     font-size: 14px;
-    line-height: calc (24 / 14);
+    line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     color: var(--footer-txt-cl);
 }
@@ -227,5 +256,8 @@ ul {
 }
 .footer-contacts{
     font-style: normal;
+}
+.footer-link > span{
+    color: var(--white-txt-cl);
 }
 
