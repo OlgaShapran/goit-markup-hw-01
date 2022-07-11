@@ -1,7 +1,7 @@
 :root {
 /* fonts */
 --main-font: "Roboto", sans-serif;
---secondary-font: "Realway", sans-serif;
+--secondary-font: "Raleway", sans-serif;
 
 /* text colors */
 --main-txt-cl: #212121;
@@ -19,60 +19,82 @@
 --team-bg-cl: #F5F4FA;
 --btn-bl-cl: #188CE8;
 }
+/* base styles */
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
 /* others */
 
-
-/* btn */
-/* base styles */
 
 body {
     font-family: var(--main-font);
     color: var(--main-txt-cl);
+    background-color: var(--white-txt-cl);
     font-size: 14px;
     letter-spacing: 0.03em;
 }
 
-/* reset styles */
-.link{
+/* частковий ресет брузера старт*/
+.link {
     text-decoration: none;
     color: currentColor;
 }
-ul {
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+ul, ol { 
     list-style: none;
 }
 
+/* частковий ресет брузера енд*/
+
+
+
 /* header section */
-.header-WebStudio>span{
+.header-WebStudio>span {
     color: var(--accent-txt-cl);
 }
-.header-WebStudio{
+.header-WebStudio {
     font-family: var(--secondary-font);
     font-weight: 700;
     font-size: 26px;
     line-height: calc(31 / 26);
     letter-spacing: 0.03em;
     color: var(--studio-txt-cl);
+    margin-right: 93px;
 }
 
-.footer-link{
-    Font-family: var(--secondary-font);
-    font-weight: 700;
-    font-size: 26px;
-    line-height: calc(31 / 26);
-    Letter-spacing: 0.03em;
-    color: var(--main-txt-cl);
-}
+
 .header-link,
 .link-mail,
-.link-phone{
+.link-phone {
     font-weight: 500;
     Font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
-.header-link{
+.header-link {
     color: var(--main-txt-cl);
-    }
+}
 
 .header-link:hover,
 .header-link:focus,
@@ -81,20 +103,50 @@ ul {
 .link-phone:hover,
 .link-phone:focus,
 .link-mail-main:hover,
-.link-mail-main:focus{
+.link-mail-main:focus {
     color: var(--accent-txt-cl);
 }
 .header-link-current,
-.active-btn{
+.active-btn {
     color: var(--accent-txt-cl);
 }
 
 .link-phone,
-.link-mail{
+.link-mail {
     color: var(--tel-txt-cl)
 }
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+.header-nav {
+    display: flex;
+    margin-right: 331px;
+    padding-left: 0;
+}
+.header-item {
+    margin-right: 50px;
+}
+.header-item:last-child {
+    margin-right: 0;
+}
+.header-list {
+    display: flex;
+    padding-left: 0;
+}
+.header-contacts {
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+}
+.header-mail {
+    margin-right: 50px;
+}
+
+/* ?провисал телефон, вручную поставила падинги, т.к. на нав и контакты падинги добавлялись по 40 рх*/
 /* hero section */
-.hero{
+.hero {
     background-color: var(--dark-bg-cl);
 
 }
@@ -118,6 +170,13 @@ ul {
     color: var(--white-txt-cl);
     background-color: var(--accent-txt-cl);
     cursor: pointer;
+
+    max-width: none;
+    min-width: 200px;
+    min-height: 50px;
+    padding: 9px 31px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 
 .hero-btn:hover,
@@ -133,13 +192,16 @@ ul {
     margin: -1px;
     border: 0;
     padding: 0;
-
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-.plus-subject{
+.plus-list{
+    display: flex;
+    gap: 30px;
+}
+.plus-subject {
     font-weight: 700;
     font-size: 14px;
     line-height: calc(16 / 14);
@@ -147,7 +209,7 @@ ul {
     text-transform: uppercase;
     color: var(--main-txt-cl);
 }
-.plus-text{
+.plus-text {
     font-weight: 400;
     font-size: 14px;
     line-height: calc(24 / 14);
@@ -156,7 +218,7 @@ ul {
 }
 /* section work */
 .work-tittle,
-.team-tittle{
+.team-tittle {
     font-weight: 700;
     font-size: 36px;
     line-height: calc(42 / 36);
@@ -164,19 +226,38 @@ ul {
     letter-spacing: 0.03em;
     color: var(--main-txt-cl);
 }
+.work-list{
+    display: flex;
+    gap: 30px;
+}
 /* section team  */
-.team{
+.team {
     background-color:var(--team-bg-cl);
 }
-.team-name{
+.team-list{
+    display: flex;
+    gap: 30px;
+    border-radius: 0px 0px 4px 4px;
+}
+.team.wrapper{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: 1px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
+}
+
+
+.team-name {
     font-weight: 500;
     font-size: 16px;
     line-height: calc(19 / 16);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-txt-cl);
+    margin-bottom: 10px;
 }
-.team-spec{
+.team-spec {
     font-weight: 400;
     font-size: 16px;
     line-height: calc(19 / 16);
@@ -185,9 +266,7 @@ ul {
     color: var(--tel-txt-cl);
 }
 /* portfolio */
-.project{
-    background-color:var(--portfolio-bg-cl);
-}
+
 .project-btn:hover,
 .project-btn:focus {
     color: var(--white-txt-cl);
@@ -207,17 +286,25 @@ ul {
 }
 
 /* не активна кнопка, не могу понять почему */
-.active-btn:active {
+.active-btn, .project-btn :active {
     background-color: var(--accent-txt-cl);
 }
-.project-subtitle{
+.project-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    height: 404px;
+
+    flex-basis: calc (100% - 30px * 2) / 3;
+}
+.project-subtitle {
     font-weight: 700;
     font-size: 18px;
     line-height: calc(36 / 18);
     letter-spacing: 0.06em;
     color: var(--main-txt-cl);
 }
-.project-text{
+.project-text {
     font-weight: 400;
     font-size: 16px;
     line-height: calc(30 / 16);
@@ -226,20 +313,27 @@ ul {
 }
 
 /* footer */
-.footer{
+.footer {
     background-color: var(--dark-bg-cl);
 }
-.footer-link{
+.footer-link {
+    Font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    Letter-spacing: 0.03em;
+    color: var(--main-txt-cl);
     color: var(--accent-txt-cl);
 }
-.footer-adress{
+
+.footer-adress {
     font-weight: 400;
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     color: var(--white-txt-cl);
 }
-.footer-mail, .footer-tel{
+.footer-mail, .footer-tel {
     font-weight: 400;
     font-size: 14px;
     line-height: calc(24 / 14);
@@ -251,13 +345,13 @@ ul {
 .footer-mail:hover,
 .footer-mail:focus,
 .footer-tel:hover,
-.footer-tel:focus{
+.footer-tel:focus {
     color: var(--accent-txt-cl);
 }
-.footer-contacts{
+.footer-contacts {
     font-style: normal;
 }
-.footer-link > span{
+.footer-link > span {
     color: var(--white-txt-cl);
 }
 
