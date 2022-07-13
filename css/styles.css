@@ -311,7 +311,7 @@ ul, ol {
     color: var(--main-txt-cl);
 }
 
-/* не активна кнопка, не могу понять почему */
+
 .active-btn, .project-btn :active {
     background-color: var(--accent-txt-cl);
 }
@@ -327,13 +327,17 @@ ul, ol {
     gap: 30px;
     flex-basis: calc (100% - 30px * 2) / 3;
 }
-
+.project-image{
+    margin-bottom: 20px;
+}
 .project-subtitle {
     font-weight: 700;
     font-size: 18px;
     line-height: calc(36 / 18);
     letter-spacing: 0.06em;
     color: var(--main-txt-cl);
+    margin-left: 24px;
+    margin-bottom: 4px;
 }
 .project-text {
     font-weight: 400;
@@ -341,6 +345,8 @@ ul, ol {
     line-height: calc(30 / 16);
     letter-spacing: 0.03em;
     color: var(--tel-txt-cl);
+    margin-left: 24px;
+    margin-bottom: 20px;
 }
 
 /* footer */
