@@ -284,7 +284,15 @@ ul, ol {
     margin-bottom: 30px;
 }
 /* portfolio */
+.project{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
+.project-list-btn{
+
+    align-items: center;
+}
 .project-btn:hover,
 .project-btn:focus {
     color: var(--white-txt-cl);
@@ -307,14 +315,19 @@ ul, ol {
 .active-btn, .project-btn :active {
     background-color: var(--accent-txt-cl);
 }
+.project-list-nav{
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
 .project-list{
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    height: 404px;
-
     flex-basis: calc (100% - 30px * 2) / 3;
 }
+
 .project-subtitle {
     font-weight: 700;
     font-size: 18px;
