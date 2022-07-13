@@ -95,10 +95,12 @@ ul, ol {
 
 .header-contacts {
     display: flex;
+    margin-left: 0;
 }
 
 .header-mail {
     margin-right: 50px;
+
 }
 
 .header-link,
@@ -109,7 +111,7 @@ ul, ol {
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
     padding-top: 32px;
-    padding-bottom: 32px;
+    margin-bottom: 32px;
 }
 .header-link {
     color: var(--main-txt-cl);
@@ -139,6 +141,8 @@ ul, ol {
 .hero {
     background-color: var(--dark-bg-cl);
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
     
 
 }
@@ -149,8 +153,6 @@ ul, ol {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white-txt-cl);
-    padding-top: 200px;
-    text-align: center;
     margin-bottom: 30px;
 
 }
@@ -160,7 +162,6 @@ ul, ol {
     Font-size: 16px;
     line-height: calc(30 / 16);
     align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
     color: var(--white-txt-cl);
     background-color: var(--accent-txt-cl);
@@ -170,8 +171,10 @@ ul, ol {
     min-height: 50px;
     padding: 9px 31px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: 1px solid transparent;
     border-radius: 4px;
-    margin-bottom: 200px;
+
+    
 /* как центрировать кнопку и опустиить паддинг */
 
     
@@ -199,8 +202,8 @@ ul, ol {
 .plus-list{
     display: flex;
     gap: 30px;
-    margin-top: 94px;
-    margin-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .plus-subject {
     font-weight: 700;
@@ -219,6 +222,9 @@ ul, ol {
     color: var(--tel-txt-cl);
 }
 /* section work */
+.work{
+    padding-bottom: 92px;
+}
 
 .work-tittle,
 .team-tittle {
@@ -228,7 +234,7 @@ ul, ol {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-txt-cl);
-    margin-bottom: 50px;
+    padding-bottom: 50px;
 }
 .work-list{
     display: flex;
@@ -237,14 +243,18 @@ ul, ol {
 /* section team  */
 .team {
     background-color:var(--team-bg-cl);
+    padding-bottom: 94px;
 }
 .team-tittle{
-    margin-top: 94px;
+    padding-top: 94px;
 }
 .team-list{
     display: flex;
     gap: 30px;
     border-radius: 0px 0px 4px 4px;
+}
+.team-foto{
+    margin-bottom: 30px;
 }
 .team.wrapper{
     padding-top: 30px;
@@ -271,6 +281,7 @@ ul, ol {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--tel-txt-cl);
+    margin-bottom: 30px;
 }
 /* portfolio */
 
@@ -322,6 +333,8 @@ ul, ol {
 /* footer */
 .footer {
     background-color: var(--dark-bg-cl);
+    padding-top: 60px;
+    padding-bottom: 60px;
 
 }
 .footer-link {
@@ -332,11 +345,13 @@ ul, ol {
     Letter-spacing: 0.03em;
     color: var(--main-txt-cl);
     color: var(--accent-txt-cl);
-    margin-top: 60px;
     margin-bottom: 20px;
+    display: block;
     
 }
-
+.footer-item{
+    margin-bottom: 9px;
+}
 .footer-adress {
     font-weight: 400;
     font-size: 14px;
