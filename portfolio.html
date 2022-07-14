@@ -19,7 +19,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
     <!-- Normilized end -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
@@ -27,37 +26,35 @@
   <body>
     <!-- --------header------------------- -->
 
-    <!--Вебстудия-->
     <header class="header">
       <div class="container header-container">
-      <nav class="header-nav">
-        <a class="header-WebStudio link" href="./index.html"><span>Web</span>Studio</a>
-        <ul class="header-list list">
-          <li class="header-item">
-            <a class="header-link link" href="./index.html">Студия</a>
+        <nav class="header-nav">
+          <a class="header-WebStudio link" href="./index.html"><span>Web</span>Studio</a>
+          <ul class="header-list list">
+            <li class="header-item">
+              <a class="header-link link" href="./index.html">Студия</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link header-link-current link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-contacts list">
+          <li class="header-mail">
+            <a class="link-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
-          <li class="header-item">
-            <a class="header-link header-link-current link" href="./portfolio.html">Портфолио</a>
-          </li>
-          <li class="header-item">
-            <a class="header-link link" href="#">Контакты</a>
+          <li class="header-phone">
+            <a class="link-phone link" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
-      </nav>
-      <ul class="header-contacts list">
-        <li class="header-mail">
-          <a class="link-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </li>
-        <li class="header-phone">
-          <a class="link-phone link" href="tel:+380961111111">+38 096 111 11 11</a>
-        </li>
-      </ul>
       </div>
     </header>
-
+    <!-- -------------portfolio--------------- -->
     <main>
-      <section class="project">
-        <div class="container">
+      <section class="project section container">
         <ul class="project-list-nav list">
           <li class="project-list-btn">
             <button class="project-btn active-btn" type="button">Все</button>
@@ -75,7 +72,7 @@
             <button class="project-btn" type="button">Маркетинг</button>
           </li>
         </ul>
-        <div class="project-list">
+
         <h1 class="visually-hidden">Проекты</h1>
         <ul class="project-list list">
           <li class="project-item">
@@ -86,8 +83,10 @@
               width="370"
               height="294"
             />
-            <h2 class="project-subtitle">Технокряк</h2>
-            <p class="project-text">Веб-сайт</p>
+            <div class="project-content">
+              <h2 class="project-subtitle">Технокряк</h2>
+              <p class="project-text">Веб-сайт</p>
+            </div>
           </li>
           <li class="project-item">
             <img
@@ -97,8 +96,10 @@
               width="370"
               height="294"
             />
-            <h2 class="project-subtitle">Постер New Orlean vs Golden Star</h2>
-            <p class="project-text">Дизайн</p>
+            <div class="project-content">
+              <h2 class="project-subtitle">Постер New Orlean vs Golden Star</h2>
+              <p class="project-text">Дизайн</p>
+            </div>
           </li>
           <li class="project-item">
             <img
@@ -108,8 +109,10 @@
               width="370"
               height="294"
             />
-            <h2 class="project-subtitle">Ресторан Seafood</h2>
-            <p class="project-text">Приложение</p>
+            <div class="project-content">
+              <h2 class="project-subtitle">Ресторан Seafood</h2>
+              <p class="project-text">Приложение</p>
+            </div>
           </li>
           <li class="project-item">
             <img
@@ -119,8 +122,10 @@
               width="370"
               height="294"
             />
-            <h2 class="project-subtitle">Проект Prime</h2>
-            <p class="project-text">Маркетинг</p>
+            <div class="project-content">
+              <h2 class="project-subtitle">Проект Prime</h2>
+              <p class="project-text">Маркетинг</p>
+            </div>
           </li>
           <li class="project-item">
             <img
@@ -130,8 +135,10 @@
               width="370"
               height="294"
             />
-            <h2 class="project-subtitle">Проект Boxes</h2>
-            <p class="project-text">Приложение</p>
+            <div class="project-content">
+              <h2 class="project-subtitle">Проект Boxes</h2>
+              <p class="project-text">Приложение</p>
+            </div>
           </li>
           <li class="project-item">
             <img
@@ -141,8 +148,10 @@
               width="370"
               height="294"
             />
-            <h2 class="project-subtitle">Inspiration has no Borders</h2>
-            <p class="project-text">Веб-сайт</p>
+            <div class="project-content">
+              <h2 class="project-subtitle">Inspiration has no Borders</h2>
+              <p class="project-text">Веб-сайт</p>
+            </div>
           </li>
           <li class="project-item">
             <img
@@ -152,8 +161,10 @@
               width="370"
               height="294"
             />
-            <h2 class="project-subtitle">Издание Limited Edition</h2>
-            <p class="project-text">Дизайн</p>
+            <div class="project-content">
+              <h2 class="project-subtitle">Издание Limited Edition</h2>
+              <p class="project-text">Дизайн</p>
+            </div>
           </li>
           <li class="project-item">
             <img
@@ -163,8 +174,10 @@
               width="370"
               height="294"
             />
-            <h2 class="project-subtitle">Проект LAB</h2>
-            <p class="project-text">Маркетинг</p>
+            <div class="project-content">
+              <h2 class="project-subtitle">Проект LAB</h2>
+              <p class="project-text">Маркетинг</p>
+            </div>
           </li>
           <li class="project-item">
             <img
@@ -174,37 +187,37 @@
               width="370"
               height="294"
             />
-            <h2 class="project-subtitle">Growing Business</h2>
-            <p class="project-text">Приложение</p>
+            <div class="project-content">
+              <h2 class="project-subtitle">Growing Business</h2>
+              <p class="project-text">Приложение</p>
+            </div>
           </li>
         </ul>
-        </div>
       </section>
-      </div>
     </main>
 
     <footer class="footer">
       <div class="container">
-      <a class="footer-link link" href="./index.html">Web<span>Studio</span></a>
-      <address class="footer-contacts">
-        <ul class="footer-list list">
-          <li class="footer-item">
-            <a
-              class="footer-adress link"
-              href="https://goo.gl/maps/uckna3FoqXZU8niu8"
-              target="_blank"
-              rel="noreferrer noopener nofollow"
-              >г. Киев, пр-т Леси Украинки, 26</a
-            >
-          </li>
-          <li class="footer-item">
-            <a class="footer-mail link" href="mailto:info@example.com">info@example.com</a>
-          </li>
-          <li class="footer-item">
-            <a class="footer-tel link" href="tel:+380991111111">+38 099 111 11 11</a>
-          </li>
-        </ul>
-      </address>
+        <a class="footer-link link" href="./index.html">Web<span>Studio</span></a>
+        <address class="footer-contacts">
+          <ul class="footer-list list">
+            <li class="footer-item">
+              <a
+                class="footer-adress link"
+                href="https://goo.gl/maps/uckna3FoqXZU8niu8"
+                target="_blank"
+                rel="noreferrer noopener nofollow"
+                >г. Киев, пр-т Леси Украинки, 26</a
+              >
+            </li>
+            <li class="footer-item">
+              <a class="footer-mail link" href="mailto:info@example.com">info@example.com</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-tel link" href="tel:+380991111111">+38 099 111 11 11</a>
+            </li>
+          </ul>
+        </address>
       </div>
     </footer>
   </body>
