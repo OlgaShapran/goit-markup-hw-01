@@ -487,12 +487,22 @@ address {
     padding-top: 72px;
     margin-left: 70px;
 } */
-/* .footer-text{
+.footer-text{
+    padding-top: 72px;
     margin-bottom: 20px;
-/* } */
-.footer-icon{
+}
+.footer-container{
+    display: flex;
+    gap: 70px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.footer-social-link{
     display: flex;
     gap: 10px;
+
+
 
 }
 
