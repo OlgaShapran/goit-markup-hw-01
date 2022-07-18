@@ -418,15 +418,21 @@ address {
     justify-content: center;
     
 }
-.clients-item{
-    border: 1px solid var(--soc-cl);
-    border-radius: 4px;
-}
-.clients-item:focus,
-.clients-item:hover,
-.clients-item:active{
+
+.clients-icon-link:focus,
+.clients-icon-link:hover,
+.clients-icon-link:active{
     fill: var(--accent-txt-cl);
     border: 1px solid var(--accent-txt-cl);
+    border-radius: 4px;
+}
+.clients-icon-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--soc-cl);
     border-radius: 4px;
 }
 /*-------------- footer------------- */
