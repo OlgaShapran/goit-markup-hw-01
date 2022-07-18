@@ -426,18 +426,13 @@ address {
     background-color: var(--dark-bg-cl);
     padding-top: 60px;
     padding-bottom: 60px;
-
-    outline: 2px solid blue;
-
-
 }
+
 .footer-container {
     display: flex;
     gap: 70px;
     justify-content: flex-start;
     align-items: flex-start;
-
-    outline: 2px solid red;
 }
 .footer-link {
     Font-family: var(--secondary-font);
@@ -490,9 +485,6 @@ address {
     display: flex;
     flex-direction: column;
     margin-top: 12px;
-
-outline: 2px solid tomato;
-
 }
 
 .footer-text{
