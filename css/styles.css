@@ -426,8 +426,19 @@ address {
     background-color: var(--dark-bg-cl);
     padding-top: 60px;
     padding-bottom: 60px;
-}
 
+    outline: 2px solid blue;
+
+
+}
+.footer-container {
+    display: flex;
+    gap: 70px;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    outline: 2px solid red;
+}
 .footer-link {
     Font-family: var(--secondary-font);
     font-weight: 700;
@@ -473,6 +484,17 @@ address {
 .footer-link > span {
     color: var(--white-txt-cl);
 }
+/* ----------social------------- */
+
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+
+outline: 2px solid tomato;
+
+}
+
 .footer-text{
     font-family: var(--main-font);
     font-weight: 700;
@@ -481,35 +503,17 @@ address {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--white-txt-cl);
-}
-/* .footer-sosial{
-    display: flex;
-    padding-top: 72px;
-    margin-left: 70px;
-} */
-.footer-text{
-    padding-top: 72px;
-    margin-bottom: 20px;
-}
-.footer-container{
-    display: flex;
-    gap: 70px;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.footer-social-link{
-    display: flex;
-    gap: 10px;
+    padding-bottom: 20px;
 }
 
 
-.footer-social-list {
+.footer-icon{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
 }
+
 
 .footer-social-link {
     display: flex;
@@ -521,8 +525,9 @@ address {
     border-radius: 50%;
 }
 
-.footer-icon {
+.footer-social-icon {
     fill: var(--btn-txt-cl);
+
 }
 
 .footer-social-link:hover {
