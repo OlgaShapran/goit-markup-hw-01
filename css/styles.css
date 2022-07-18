@@ -237,11 +237,6 @@ address {
     border-radius: 4px;
 }
 
-.plus-icon{
-    margin-bottom: 30px;
-    background: var(--team-bg-cl);
-    border-radius: 4px;
-}
 .plus-icon:active,
 .plus-icon:hover,
 .plus-icon:focus{
