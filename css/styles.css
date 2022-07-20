@@ -102,18 +102,6 @@ address {
     justify-content: center;
     align-items: center;
 }
-.header-mail-icon,
-.header-phone-icon{
-    margin-right: 10px;
-}
-.header-mail-icon:hover,
-.header-mail-icon:focus,
-.header-phone-icon:hover,
-.header-phone-icon:focus{
-    fill: var(--accent-txt-cl);
-}
-
-
 
 .header-mail {
     margin-right: 50px;
@@ -154,26 +142,24 @@ address {
     color: var(--tel-txt-cl)
 }
 
-.header-phone-icon{
-    display: block;
-    align-items: center;
-    justify-content: center;
+.header-icon{
+    fill: currentColor;
+    margin-right: 10px;
 }
-
 /* -------------------hero section------------- */
 .hero {
     background-color: var(--dark-bg-cl);
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: url(../images/overlay.jpg),
-    linear-gradient(to right,
+    background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4));    
+            rgba(47, 48, 58, 0.4)), url("../images/overlay.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 1600px;
+    max-height: 600px;
     margin-left: auto;
     margin-right: auto;
     border: 1px solid var(--studio-txt-cl);
@@ -228,7 +214,7 @@ address {
     overflow: hidden;
 }
 .plus-thumb{
-    margin-bottom: 55px;
+    margin-bottom: 30px;
 }
 .plus-icon-link{
     display: flex;
@@ -248,7 +234,6 @@ address {
 .plus-list {
     display: flex;
     gap: 30px;
-    justify-content: center;
 }
 
 .plus-subject {
@@ -304,6 +289,7 @@ address {
 .team-item {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    background-color: var(--white-txt-cl);
 }
 .team-wrapper {
     padding-top: 30px;
@@ -342,19 +328,15 @@ address {
 .project-list-btn {
     align-items: center;
 }
-.project-btn:hover,
-.project-btn:focus{
-    color: var(--white-txt-cl);
-    background-color: var(--accent-txt-cl);
-    border: none;
 
-}
+
 .project-btn:hover,
 .project-btn:focus {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+    color: var(--white-txt-cl);
+    background-color: var(--accent-txt-cl);
 }
-
 
 .project-btn {
     font-family: inherit;
@@ -364,6 +346,8 @@ address {
     text-align: center;
     letter-spacing: 0.03em;
     cursor: pointer;
+    border: none;
+    border-radius: 4px;
     background-color: var(--team-bg-cl);
     color: var(--main-txt-cl);
     padding: 6px 22px;
@@ -392,8 +376,13 @@ address {
     border: 1px solid var(--line-cl);
 }
 
-.project-item:hover{
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+.project-item:hover,
+.project-item:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.project-content:hover,
+.project-content:focus{
+    color: currentColor;
 }
 
 .project-subtitle {
@@ -416,13 +405,12 @@ address {
     display: flex;
     gap: 30px;
     justify-content: center;
-    
 }
 
 .clients-icon-link:focus,
 .clients-icon-link:hover,
 .clients-icon-link:active{
-    fill: var(--accent-txt-cl);
+    color: var(--accent-txt-cl);
     border: 1px solid var(--accent-txt-cl);
     border-radius: 4px;
 }
@@ -433,7 +421,11 @@ address {
     width: 170px;
     height: 92px;
     border: 1px solid var(--soc-cl);
+    color: var(--soc-cl);
     border-radius: 4px;
+}
+.plus-thumb-icon{
+    fill: currentColor;
 }
 /*-------------- footer------------- */
 .footer {
@@ -444,10 +436,12 @@ address {
 
 .footer-container {
     display: flex;
-    gap: 70px;
-    justify-content: flex-start;
-    align-items: flex-start;
+    align-items: baseline;
 }
+.footer-left{
+    margin-right: 70px;
+}
+
 .footer-link {
     Font-family: var(--secondary-font);
     font-weight: 700;
@@ -495,11 +489,6 @@ address {
 }
 /* ----------social------------- */
 
-.footer-social {
-    display: flex;
-    flex-direction: column;
-    margin-top: 12px;
-}
 
 .footer-text{
     font-family: var(--main-font);
@@ -509,13 +498,12 @@ address {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--white-txt-cl);
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 
 .footer-icon{
     display: flex;
-    align-items: center;
     justify-content: center;
     gap: 10px;
 }
@@ -527,27 +515,24 @@ address {
     justify-content: center;
     width: 44px;
     height: 44px;
-    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--btn-txt-cl);
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
 }
 
 .footer-social-icon {
-    fill: var(--btn-txt-cl);
-
+    fill: currentColor;
 }
 
-.footer-social-link:hover {
+.footer-social-link:hover,
+.footer-social-link:focus {
     background-color: var(--accent-txt-cl);
 }
 
-.footer-social-link:hover .social-icon {
-    fill: var(--white-txt-cl)
-}
 
 /* ------social icons---------------- */
 .team-social-list{
     display: flex;
-    align-items: center;
     justify-content: center;
     gap: 10px;
 }
@@ -558,16 +543,15 @@ address {
     justify-content: center;
     width: 44px;
     height: 44px;
-    background-color: var(--btn-txt-cl);
+    color: var(--soc-cl);
     border-radius: 50%;
 }
 .social-icon{
-    fill: var(--soc-cl);
+    fill: currentColor;
 }
-.team-social-link:hover{
+.team-social-link:hover,
+.team-social-link:focus{
     background-color: var(--accent-txt-cl);
-}
-.team-social-link:hover .social-icon{
-    fill: var(--white-txt-cl)
+    color: var(--btn-txt-cl);
 }
 
